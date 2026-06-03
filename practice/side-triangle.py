@@ -17,5 +17,11 @@ while side3<0:
 
 if(side1+side2>side3 and side2+side3>side1 and side1+side3>side2):
     print("triangle can be formed")
+    if(side1==side2==side3):
+        print("equivalent triangle")
+    elif(side1==side2 or side1==side3 or side2==side3):
+        print("isosceles triangle")
+    else:
+        print("sceles triangles")
 else:
     print("triangle is not possible")
