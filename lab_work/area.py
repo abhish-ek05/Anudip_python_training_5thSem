@@ -1,4 +1,4 @@
-# Rectangle Area and Perimeter with validation
+# Rectangle Area and Perimeter 
 
 L = float(input("Enter Length: "))
 
