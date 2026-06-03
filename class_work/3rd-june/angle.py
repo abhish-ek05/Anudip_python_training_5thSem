@@ -20,5 +20,11 @@ while angle3<0:
 
 if(angle1+angle2+angle3==180):
     print("triangle formation is possible !!!")
+    if(angle1==90 or angle2==90 or angle3==90):
+        print("right angle triangle!")
+    elif(angle1<90 and angle2<90 and angle3<90):
+        print("acute angle triangle !!")
+    else:
+        print("obtuse angle triangle !")
 else:
     print("triangle can not be formed !!!")
