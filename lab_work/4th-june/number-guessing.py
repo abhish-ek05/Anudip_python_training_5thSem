@@ -1,6 +1,6 @@
 import random
 
-a= random.randint(1,50)
+a= random.randint(1,5)
 print("you have got only 5 chances")
 for i in range(5):
     user = int(input("Enter any number from 1 to 50 : "))
@@ -10,3 +10,4 @@ for i in range(5):
         print("too low ")
     else:
         print("correct guess")
+        break
