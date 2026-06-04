@@ -1,8 +1,10 @@
-import time
 
+minute = 0
 level = 0
 while level < 100:
+
+    print(f"at minute {minute} the water level is {level}")
     level = level + 10
-    print(f"water level is {level}")
-    time.sleep(5)
-print("water tank is full")
+    minute = minute + 1
+    
+print(f"at minute {minute} water tank is full")
