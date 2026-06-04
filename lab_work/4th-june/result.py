@@ -2,7 +2,8 @@ total = 0
 
 for i in range(1, 6):
     marks = float(input(f"Enter marks of Subject {i}: "))
-    total += marks
+    if marks<=100:
+        total += marks
 
 percentage = total / 5
 
@@ -18,7 +19,7 @@ elif percentage >= 60:
 
 elif percentage >= 40:
     grade = "C"
-    
+
 else:
     grade = "Fail"
 
