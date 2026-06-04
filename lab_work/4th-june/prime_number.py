@@ -9,7 +9,7 @@ if num <= 1:
 
 else:
 
-    for i in range(1, num + 1):
+    for i in range(1, (num//2)+1):
         if num % i == 0:
             factors.append(i)
 
