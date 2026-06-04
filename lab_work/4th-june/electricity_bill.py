@@ -1,30 +1,25 @@
-# Problem Statement: 
-# Calculate electricity bill based on the following slab rates: 
+units = int(input("Enter units consumed: "))
 
-unit = int(input("enter total unit of consumption"))
-total = 0 
-if (unit>0 and unit<=100):
+if units <= 100:
+    bill = units * 5
 
-    total = unit*5
+elif units <= 200:
+    bill = (100 * 5) + ((units - 100) * 7)
 
-    print(f"total energy consumption is {unit}")
-    print(f"total bill is {total}")
-
-elif(unit>=101 and unit<=200):
-
-    total = unit*7
-
-    print(f"total energy consumption is {unit}")
-    print(f"total bill is {total}")
-
-elif unit>200:
-
-    total = unit*10
-
-    print(f"total energy consumption is {unit}")
-    print(f"total bill is {total}")
-    
 else:
-    print("energy consumption can not be 0 or negative")
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
 
 
+if units <= 100:
+    category = "Low Consumption"
+
+elif units <= 200:
+    category = "Medium Consumption"
+
+else:
+    category = "High Consumption"
+
+
+print("units consumed :", units)
+print("total bill : ₹", bill)
+print("category :", category)
