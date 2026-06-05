@@ -2,12 +2,14 @@ total = 0
 subject = 1
 while subject<=5:
     marks = float(input(f"Enter marks of Subject {subject}: "))
-    subject+=1
+    
     if marks<=100:
         total += marks
+        subject+=1
     else:
         print("marks entered are invalid  Re-enter")
         marks = float(input("again enter marks:"))
+        subject+=0
 
 percentage = total / 5
 
