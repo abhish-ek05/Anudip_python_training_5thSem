@@ -62,6 +62,12 @@ for i in employees:
     else:
         print(i[1],"--->","need improvement")
 print("\n")
-print('highest scorer is : ')
-for i in max(employees):
-    print(i, end=" ")
+
+top = employees[0]
+for e in employees:
+    if e[2] > top[2]:
+        top = e
+        
+print("Highest Performer:")
+print(top[0], top[1], top[2])
+print()
