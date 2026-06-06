@@ -51,7 +51,7 @@ for i in employees:
         high.append(i[1])
         
 print(high,'\n')
-
+print("performance category:")
 for i in employees:
     if i[2]>=90:
         print(i[1],"--->","excellent")
@@ -61,3 +61,7 @@ for i in employees:
         print(i[1],"--->","average")
     else:
         print(i[1],"--->","need improvement")
+print("\n")
+print('highest scorer is : ')
+for i in max(employees):
+    print(i, end=" ")
