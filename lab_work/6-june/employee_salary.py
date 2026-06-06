@@ -30,6 +30,6 @@ for i in employees:
         print(f" {i[0]} ")
     elif i[1]<40000:
         count+=1
-print(f"total salary is : {total}")
-print(f"employees earning under then 40k : {count}")
-print(f"highest paid employee is : {highest[0]}")
+print(f"\ntotal salary is : {total}")
+print(f"\nemployees earning under then 40k : {count}")
+print(f"\nhighest paid employee is : {highest[0]}")
