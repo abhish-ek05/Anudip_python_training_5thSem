@@ -40,9 +40,13 @@ for i in employees:
         print(i[0], i[1], i[2])
     elif i[2]<60:
         improve+=1
+        
 print("\n")
+
 print("employee needing improvement :" , improve)
+
 print("\n")
+
 print("High performers are : ")
 high = []
 
@@ -51,7 +55,9 @@ for i in employees:
         high.append(i[1])
         
 print(high,'\n')
+
 print("performance category:")
+
 for i in employees:
     if i[2]>=90:
         print(i[1],"--->","excellent")
@@ -67,7 +73,7 @@ top = employees[0]
 for e in employees:
     if e[2] > top[2]:
         top = e
-        
+
 print("Highest Performer:")
 print(top[0], top[1], top[2])
 print()
