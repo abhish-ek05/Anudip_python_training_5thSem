@@ -10,21 +10,33 @@ Write a program to:
 3. Create a list of all available seat numbers.  
 4. Determine whether the bus is more than 70% occupied.  '''
 
-seats = [1, 0, 1, 1, 0, 0, 1, 1, 1, 0] 
-avail = 0
-booked = 0
-availst = []
-firstSeat = 0
-for i in seats:
-    if i==0:
-        avail += 1
-        if firstSeat == 0 :
-            firstSeat = seats.index(i)+1
+seats = [1, 0, 1, 1, 0, 0, 1, 1, 1, 0]
 
-        availst.append(seats.index(i)+1)
-        seats.remove(i)
-        
-    else:
+booked = 0
+available = 0
+availableSeats = []
+firstAvailableSeat = 0
+
+for i in range(len(seats)):
+    if seats[i] == 1:
         booked += 1
-        
-print(availst)
+    else:
+        available += 1
+
+        if firstAvailableSeat == 0:
+            firstAvailableSeat = i + 1
+
+        availableSeats.append(i + 1)
+
+occupancy = (booked / len(seats)) * 100
+
+print("Booked Seats:", booked)
+print("Available Seats:", available)
+print("First Available Seat:", firstAvailableSeat)
+print("Available Seat Numbers:", availableSeats)
+print("Bus Occupancy:", occupancy, "%")
+
+if occupancy > 70:
+    print("Status: More Than 70% Occupied")
+else:
+    print("Status: Not More Than 70% Occupied")
