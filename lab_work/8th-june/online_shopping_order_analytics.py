@@ -47,7 +47,7 @@ for i in sales:
         highest = sales[i]
         best = i
 
-print("\nBest-selling product:", best)
+print("\nBest-selling product:", best,"(",highest,')')
 
 # 3. Least-selling product
 first = True
@@ -61,7 +61,7 @@ for i in sales:
         lowest = sales[i]
         least = i
 
-print("Least-selling product:", least)
+print("Least-selling product:", least,"(",lowest,')')
 
 # 4. Total products sold
 total = 0
