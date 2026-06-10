@@ -1,5 +1,8 @@
-f = open("file_handling.txt", "r")
-g = open ("new_file.txt","w")
+fileName1 = input("enter source file name : ")
+fileName2 = input("enter destination file name : ")
+
+f = open(fileName1, "r")
+g = open (fileName2,"w")
 text = f.read()
 g.write(text)
 print("file coppied successfully")
