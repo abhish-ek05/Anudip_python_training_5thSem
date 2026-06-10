@@ -1,0 +1,7 @@
+f = open("file_handling.txt", "r")
+g = open ("new_file.txt","w")
+text = f.read()
+g.write(text)
+print("file coppied successfully")
+f.close()
+g.close()
