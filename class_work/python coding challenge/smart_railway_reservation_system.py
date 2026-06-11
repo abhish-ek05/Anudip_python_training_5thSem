@@ -78,7 +78,7 @@ for key, value in seats.items():
 
 print("\n")
 
-# 4. Cancel booking for a given seat number (FIXED)
+# 4. Cancel booking for a given seat number
 seat = int(input("Enter seat number to cancel booking: "))
 
 if seat in seats:
