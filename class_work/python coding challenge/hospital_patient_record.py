@@ -66,6 +66,7 @@ print("Normal:", normal)
 print("Stable:", stable)
 print("Critical:", critical_count)
 
+# checking if patient is present
 pid = input("\nEnter Patient ID: ")
 
 found = False
@@ -80,7 +81,7 @@ for p in patients:
 if not found:
     print("Not Found")
 
-
+## creating another file 
 f = open("critical_patients.txt", "w")
 for p in critical:
     f.write(p)
